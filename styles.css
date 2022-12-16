@@ -8,19 +8,100 @@ black - #000000;
 */
 
 
-.button {
-  border: none;
-  color: #134d71;
-  padding: 16px 32px;
+body {
+  font-family: Quicksand, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(#134d71, #78a7c6, #f7e4bf) fixed;
+}
+h1 {
+  color: #ffffff;
+  
+  margin: 2px 2px;
+}
+h3 {
+  color: #ffffff;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 75px;
+  margin-bottom: 4px;
+}
+.chooseMessage {
+background-color: #ffffff;
+padding: 15px 15px;
+margin-bottom: 100px;
+width: 500px;
+height: 70px;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-content: center; 
+
+border: 1px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1px 1px;
+  width: 500px;
+}
+
+#affirmation {
+ 
+}
+
+button {
+  border: 1px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-bottom-right-radius:2px;
+  border-bottom-left-radius:2px;
+  background-color: #134d71;
+  color: #ffffff;
+  padding: 1px 25px;
+  
+  margin: 0 auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+
   transition-duration: 0.3s;
   cursor: pointer;
 }
 
+.displayMessage, 
+.displayImage {
+  background-color: #ffffff;
+  height: 100px;
+  width: 750px;
+  border: 1px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centering y-axis */
+  align-items: center; /* Centering x-axis */
+  padding: 20px;
+  }
+
+  img {
+    width: 70px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    align-items: center;
+  }
+/* 
 .buttonMessage {
   background-color: #134d71;
   color: #ffffff;
@@ -30,5 +111,5 @@ black - #000000;
 .buttonMessage:hover {
   background-color: #78a7c6;
   color: white;
-}
+} */
 
