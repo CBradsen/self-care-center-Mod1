@@ -2,36 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-   
     <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    
+
   </head>
   <body>
-    <div id="grad"></div>
-    <section> 
+  
       <header><h1> &#10024 Self Care Center &#10024 </h1></header>
-    </section>
-           
-   
-        <header><h3>Which type of message?</h3></header>
+  
+      <section> 
+       <h3>Which type of message?</h3>
       
-            <form>
-            <input type="radio" id="affirmation" name="message" value="affirmation" checked>
-            <label for="affirmation"><i>affirmation</i></label>
-          
-            <input type="radio" id="mantra" name="message" value="mantra">
-            <label for="mantra"><i>mantra</i></label>
-            
+            <form class="chooseMessage">
+              <div class="radioButtons">
+                <input type="radio" id="affirmation" name="message" value="affirmation" checked>
+                <label for="affirmation"><i>affirmation</i></label>
+                <input type="radio" id="mantra" name="message" value="mantra">
+                <label for="mantra"><i>mantra</i></label>
+              </div>
             <br>
             <br>
-            <button>receive message</button>
-            
-           
-            </form>
+            <button>Receive Message</button>
+          </form>
+      </section>
+
+      <section>
+        <div class="displayMessage">
+          <img src="    ">
+          <p>
+
+          </p>
+
+        </div>
 
 
+      </section>
 
   </body>
 </html>
