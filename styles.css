@@ -27,28 +27,41 @@ h3 {
 }
 .choose-message {
 background-color: #ffffff;
-padding: 15px 15px;
+padding: 10px 10px 6px 10px;
 margin-bottom: 100px;
-width: 500px;
-height: 70px;
+width: 450px;
+height: 60px;
 display: flex;
 flex-direction: column;
 text-align: center;
 align-content: center; 
-
+justify-content: center;
 border: 1px;
-  border-top-left-radius:5px;
-  border-top-right-radius:5px;
-  border-bottom-right-radius:5px;
-  border-bottom-left-radius:5px;
+border-radius:5px;
+  
 }
-
-.radio-buttons {
+.radio-button-line {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 1px 1px 1px 50px;
-  width: 500px;
+}
+.radio-button1 {
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 1px 1px 1px 20px;
+  width: 500px; */
+}
+
+.radio-button2 {
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 1px 20px 1px 1px;
+  width: 500px; */
 }
 
 #affirmation {
@@ -56,18 +69,19 @@ border: 1px;
 }
 
 button {
+  height: 20px;
+  width: 175px;
   border: 1px;
-  border-top-left-radius:2px;
-  border-top-right-radius:2px;
-  border-bottom-right-radius:2px;
-  border-bottom-left-radius:2px;
+  border-radius:3px;
   background-color: #134d71;
   color: #ffffff;
-  padding: 1px 25px;
+  padding: 1px 20px 1px 20px;
+  
   margin: 0 auto;
+  margin-top: 17px;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
   cursor: pointer;
 }
 

@@ -22,15 +22,6 @@ function pickDisplayMessage(event) {
   }
 }
 
-// function changeView () {
-//   if (we are displaying text) {
-
-//      
-//   }
-// }
-// another function to remove hidden from display-text
-
-
 var mantras = [
     "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
     "Don't let yesterday take up too much of today.",
