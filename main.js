@@ -1,8 +1,8 @@
-var whichMessage = document.querySelector(".receive-message");
-var placeMessage = document.querySelector(".display-text");
-var displayImage = document.querySelector(".display-image");
+var whichMessage = document.querySelector("#get-message-button");
+var placeMessage = document.querySelector("#display-text");
+var displayImage = document.querySelector("#display-image");
 var affirmation = document.querySelector("#affirmation");
-
+var mantra = document.querySelector("#mantra");
 
 function getRandomIndexNumber(array) {
   return [Math.floor(Math.random() * array.length)]; 
@@ -10,12 +10,14 @@ function getRandomIndexNumber(array) {
 
 whichMessage.addEventListener("click", pickDisplayMessage);
 
-function pickDisplayMessage(event) {
-  event.preventDefault()
 
+function pickDisplayMessage(event) {
+  event.preventDefault();
+  displayImage.classList.add("hidden");
+  placeMessage.classList.remove("hidden");
   if (affirmation.checked) {
     placeMessage.innerText = `${affirmations[getRandomIndexNumber(affirmations)]}`;
-  } else if (mantras.checked) {
+  } else if (mantra.checked) {
     placeMessage.innerText = `${mantras[getRandomIndexNumber(mantras)]}`;
   }
 }
@@ -23,7 +25,7 @@ function pickDisplayMessage(event) {
 // function changeView () {
 //   if (we are displaying text) {
 
-//       display-image.classlist.add("hidden");
+//      
 //   }
 // }
 // another function to remove hidden from display-text

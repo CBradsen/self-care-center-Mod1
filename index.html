@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script type="text/javascript" src="main.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
@@ -14,7 +14,7 @@
       <section> 
         <form class="choose-message">
           <div class="radio-button1">
-            <input type="radio" id="affirmation" name="message" value="affirmation">
+            <input type="radio" id="affirmation" name="message" value="affirmation" checked>
             <label for="affirmation"><i>affirmation</i></label>
 
             <input type="radio" id="mantra" name="message" value="mantra">
@@ -22,21 +22,25 @@
           </div>
           <br>
           <br>
-          <button class="receive-message">Receive Message</button>
+          <button class="receive-message" id="get-message-button">Receive Message</button>
         </form>
       </section>
 
       <section>
         <div class="display-image">
-          <img src="assets/meditate.svg" alt="image of someone meditating"/>  
+          <img class="meditate-img" id="display-image" src="assets/meditate.svg" alt="image of someone meditating"/>  
+
+          <p class="display-text hidden" 
+          id="display-text"></p>
         </div>
+
+  
       </section>
 
-      <section>
-         <p class="display-text"></p>
-      </section>
+      
 
 
-
+      
   </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
