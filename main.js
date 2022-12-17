@@ -3,31 +3,30 @@ var placeMessage = document.querySelector(".display-text");
 var displayImage = document.querySelector(".display-image");
 var affirmation = document.querySelector("#affirmation");
 
-whichMessage.addEventListener('click', pickDisplayMessage);
 
 function getRandomIndexNumber(array) {
   return [Math.floor(Math.random() * array.length)]; 
 }
 
-function pickDisplayMessage() {
+whichMessage.addEventListener("click", pickDisplayMessage);
+
+function pickDisplayMessage(event) {
+  event.preventDefault()
+
   if (affirmation.checked) {
-    placeMessage.innerHTML = `${affirmations[getRandomIndexNumber(affirmations)]}`;
+    placeMessage.innerText = `${affirmations[getRandomIndexNumber(affirmations)]}`;
   } else if (mantras.checked) {
-    placeMessage.innerHTML = `${getRandomIndexNumber(mantras)}`;
+    placeMessage.innerText = `${mantras[getRandomIndexNumber(mantras)]}`;
   }
 }
-
-
-
-
 
 // function changeView () {
 //   if (we are displaying text) {
 
-//       displayImage.classlist.add("hidden");
+//       display-image.classlist.add("hidden");
 //   }
 // }
-// another function to remove hidden from displayText
+// another function to remove hidden from display-text
 
 
 var mantras = [

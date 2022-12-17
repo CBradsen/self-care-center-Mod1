@@ -47,7 +47,7 @@ border: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1px 1px;
+  padding: 1px 1px 1px 50px;
   width: 500px;
 }
 
