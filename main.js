@@ -1,9 +1,33 @@
+var whichMessage = document.querySelector(".receiveMessage");
+var placeMessage = document.querySelector(".displayText");
+var displayImage = document.querySelector(".displayImage");
+var affirmation = document.querySelector("#affirmation");
+
+whichMessage.addEventListener("click", pickDisplayMessage);
+
+function getRandomIndexNumber(array) {
+  return [Math.floor(Math.random() * array.length)]; 
+}
+  
+function pickDisplayMessage() {
+  if (affirmation.checked) {
+    placeMessage.innerText = `${getRandomIndexNumber(affirmations)}`;
+  } else if (mantras.checked) {
+    placeMessage.innerText = `${getRandomIndexNumber(mantras)}`;
+  }
+
+
+}
 
 
 
+// function changeView () {
+//   if (we are displaying text) {
 
-
-
+//       displayImage.classlist.add("hidden");
+//   }
+// }
+// another function to remove hidden from displayText
 
 
 
