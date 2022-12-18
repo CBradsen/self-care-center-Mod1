@@ -9,10 +9,28 @@
   </head>
   <body>
     <br>
-      <header><h1> &#10024 Self Care Center &#10024 </h1></header>
-  
-      <h3>Which type of message?</h3>
-      <section> 
+    <header><h1> &#10024 Self Care Center &#10024 </h1></header>
+    <section>
+    <div class ="login-page">
+      <p><h2>Welcome!</h2></p>
+      <p><h3>Please submit your name to enter</h3></p>
+      <form>
+        <div class ="formcontainer">
+        <div class ="login">
+        <input type="text" id="user-name" 
+        name="login-name" placeholder="| Pearl">
+        </div>
+        <button class ="login-submit-button" id="login-submit-button">Submit</button> 
+        <section>
+        <img class="meditate-img-login" id="display-image-login" src="assets/meditate.svg" alt="image of someone meditating"/>  
+        </section>
+      </form>
+    </div> 
+    </section> 
+    <section>
+      <div class="main-page" hidden>
+        <div class="welcome-user"><h2>Welcome</h2></div>
+        <h3>Which type of message?</h3>
         <form class="choose-message">
           <div class="radio-button-line">
             <div class="radio-button1">
@@ -33,17 +51,15 @@
       </section>
 
       <section>
-        <div class="display-image">
+        <div class="display-bottom-box">
           <img class="meditate-img" id="display-image" src="assets/meditate.svg" alt="image of someone meditating"/>  
 
           <p class="display-text hidden" 
           id="display-text"></p>
         </div>
-
-  
+    </div>
       </section>
-
-      
+    </section> 
 
 
       
