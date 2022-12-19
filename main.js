@@ -1,5 +1,5 @@
 var whichMessage = document.querySelector("#get-message-button");
-var placeMessage = document.querySelector("#display-text");
+var placeMessage = document.querySelector(".display-text");
 var displayImage = document.querySelector("#display-image");
 var displayBottomBox = document.querySelector(".display-bottom-box");
 var affirmation = document.querySelector("#affirmation");
@@ -10,9 +10,11 @@ var loginButton = document.querySelector("#login-submit-button");
 var greetUser = document.querySelector(".welcome-user");
 var userName = document.querySelector("#user-name");
 
+
+
 // window.onload = function loginWindow() {
 //   mainPage.classList.add("hidden");
-//   displayBottomBox.classList.add("hidden");
+ 
 // }
 
 function getRandomIndexNumber(array) {
@@ -26,10 +28,11 @@ function openMainPage(event) {
   event.preventDefault();
   loginPage.classList.add("hidden");
   mainPage.classList.remove("hidden");
-  greetUser.innerText = `Welcome, ${userName}!`;
+  displayBottomBox.classList.remove("hidden");
+  placeMessage.classList.remove("hidden");
+  greetUser.innerText = `Welcome, ${userName.value}!`;
 
 }
-
 
 function pickDisplayMessage(event) {
   event.preventDefault();

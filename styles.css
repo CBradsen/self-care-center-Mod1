@@ -12,8 +12,19 @@ body {
   font-family: Quicksand, sans-serif;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-content: center;  
   align-items: center;
   background: linear-gradient(#134d71, #78a7c6, #f7e4bf) fixed;
+}
+
+.main-page {
+  font-family: Quicksand, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;  
+  align-items: center;
 }
 
 h1 {
@@ -32,10 +43,18 @@ h3 {
   margin-top: 2px;
   margin-bottom: 0px;
 }
+.welcome-user {
+  font-family: Quicksand, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  
+}
 
-.formcontainer {
+.form-container {
   background-color: #ffffff;
-  width: 90%;
+  width: 50%;
   padding: 12px 12px;
   margin: 0 auto;
   display: inline-block;
@@ -73,6 +92,7 @@ button:hover {
 .choose-message {
 background-color: #ffffff;
 padding: 10px 10px 2px 10px;
+margin-top: 3px;
 margin-bottom: 90px;
 width: 415px;
 height: 67px;
@@ -93,22 +113,13 @@ border-radius:9px;
 }
 .radio-button1 {
   margin-left: auto;
-  margin-right: auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: left;
-  padding: 1px 1px 1px 20px;
-  width: 500px; */
+  margin-right: auto; 
 }
 
 .radio-button2 {
   margin-left: auto;
   margin-right: auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: right;
-  padding: 1px 20px 1px 1px;
-  width: 500px; */
+  
 }
 
 
@@ -120,7 +131,6 @@ button {
   background-color: #134d71;
   color: #ffffff;
   padding: 3px 15px 2px 15px;
-  
   margin: 0 auto;
   margin-top: 18px;
   font-family: 'Quicksand', sans-serif;
@@ -132,7 +142,7 @@ button:hover {
     background-color: #447697;
   }
 
-.display-image {
+.display-bottom-box {
   background-color: #ffffff;
   height: 85px;
   width: 670px;
@@ -149,9 +159,11 @@ button:hover {
     width: 60px;
     height: 160px;
     display: block;
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
+    margin-top: auto; */
     align-items: center;
+   margin: 0 auto;
   }
 
   p {
