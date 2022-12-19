@@ -10,13 +10,6 @@ var loginButton = document.querySelector("#login-submit-button");
 var greetUser = document.querySelector(".welcome-user");
 var userName = document.querySelector("#user-name");
 
-
-
-// window.onload = function loginWindow() {
-//   mainPage.classList.add("hidden");
- 
-// }
-
 function getRandomIndexNumber(array) {
   return [Math.floor(Math.random() * array.length)]; 
 }

@@ -43,6 +43,7 @@ h3 {
   margin-top: 2px;
   margin-bottom: 0px;
 }
+
 .welcome-user {
   font-family: Quicksand, sans-serif;
   color: #ffffff;
@@ -173,19 +174,3 @@ button:hover {
   align-items: center;
   font-size: 16px;
   }
-
-
-  
-  
-/* 
-.buttonMessage {
-  background-color: #134d71;
-  color: #ffffff;
-  border: none;
-}
-
-.buttonMessage:hover {
-  background-color: #78a7c6;
-  color: white;
-} */
-
