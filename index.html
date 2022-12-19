@@ -2,41 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script type="text/javascript" src="main.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
   </head>
   <body>
-  
-      <header><h1> &#10024 Self Care Center &#10024 </h1></header>
-  
-      <h3>Which type of message?</h3>
-      <section> 
-            <form class="chooseMessage">
-              <div class="radioButton1">
-                <input type="radio" id="affirmation" name="message" value="affirmation" checked>
-                <label for="affirmation"><i>affirmation</i></label>
-              
-                <input type="radio" id="mantra" name="message" value="mantra">
-                <label for="mantra"><i>mantra</i></label>
-              </div>
-            <br>
-            <br>
-            <button>Receive Message</button>
-          </form>
-      </section>
+    <br>
+    <header><h1> &#10024 Self Care Center &#10024 </h1></header>
+    <br>
+    <br>
+    <section>
+    <div class ="login-page">
+      <p><h2>Welcome!</h2></p>
+      <p><h3>Please submit your name to enter</h3></p>
+      <form>
+        <div class ="form-container">
+        <div class ="login">
+        <input type="text" id="user-name" 
+        name="login-name" placeholder="| Pearl">
+        </div>
+        <button class ="login-submit-button" id="login-submit-button">Submit</button> 
+        <section>
+        <img class="meditate-img-login" id="display-image-login" src="assets/meditate.svg" alt="image of someone meditating"/>  
+        </section>
+      </form>
+    </div> 
+    <br>
+    </section> 
+    <section>
+      <div class="main-page hidden">
+        <div class="welcome-user"><h2>Welcome</h2></div>
+        <br>
+        <h3>Which type of message?</h3>
+        <form class="choose-message">
+          <div class="radio-button-line">
+            <div class="radio-button1">
+              <label for="affirmation">
+              <input type="radio" id="affirmation" name="message" value="affirmation" checked/>
+              <i>affirmation</i>
+              </label>
+            </div>
+            <div class="radio-button2">
+              <label for="mantra">
+              <input type="radio" id="mantra" name="message" value="mantra"/>
+             <i>mantra</i>
+             </label>
+            </div>
+          </div>
+          <button class="receive-message" id="get-message-button">Receive Message</button>
+        </form>
+   
 
       <section>
-        <div class= "displayImage">
-          <img src="assets/meditate.svg" alt= "image of someone meditating"/>  
-        
-          <p>
-          </p>
+      <div class="display-bottom-box hidden">
+          <img class="meditate-img" id="display-image" src="assets/meditate.svg" alt="image of someone meditating"/>  
 
-        </div>
-
+          <p class="display-text hidden"
+          id="display-text"></p>
+      </div>
+      </div>
       </section>
+    </section> 
 
+
+      
   </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>

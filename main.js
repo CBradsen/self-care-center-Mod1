@@ -1,12 +1,49 @@
+var whichMessage = document.querySelector("#get-message-button");
+var placeMessage = document.querySelector(".display-text");
+var displayImage = document.querySelector("#display-image");
+var displayBottomBox = document.querySelector(".display-bottom-box");
+var affirmation = document.querySelector("#affirmation");
+var mantra = document.querySelector("#mantra");
+var mainPage = document.querySelector(".main-page");
+var loginPage = document.querySelector(".login-page");
+var loginButton = document.querySelector("#login-submit-button");
+var greetUser = document.querySelector(".welcome-user");
+var userName = document.querySelector("#user-name");
 
 
 
+// window.onload = function loginWindow() {
+//   mainPage.classList.add("hidden");
+ 
+// }
 
+function getRandomIndexNumber(array) {
+  return [Math.floor(Math.random() * array.length)]; 
+}
 
+loginButton.addEventListener("click", openMainPage);
+whichMessage.addEventListener("click", pickDisplayMessage);
 
+function openMainPage(event) {
+  event.preventDefault();
+  loginPage.classList.add("hidden");
+  mainPage.classList.remove("hidden");
+  displayBottomBox.classList.remove("hidden");
+  placeMessage.classList.remove("hidden");
+  greetUser.innerText = `Welcome, ${userName.value}!`;
 
+}
 
-
+function pickDisplayMessage(event) {
+  event.preventDefault();
+  displayImage.classList.add("hidden");
+  placeMessage.classList.remove("hidden");
+  if (affirmation.checked) {
+    placeMessage.innerText = `${affirmations[getRandomIndexNumber(affirmations)]}`;
+  } else if (mantra.checked) {
+    placeMessage.innerText = `${mantras[getRandomIndexNumber(mantras)]}`;
+  }
+}
 
 var mantras = [
     "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
